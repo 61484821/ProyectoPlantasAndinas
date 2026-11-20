@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text textoPlantas;
     public TMP_Text textoMonedas;
     public GameObject panelFinal;
-    public int totalPlantas = 5;
+    public int totalPlantas = 3;
 
     int plantas, monedas;
 
