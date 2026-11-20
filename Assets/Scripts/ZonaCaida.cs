@@ -23,6 +23,9 @@ public class ZonaCaida : MonoBehaviour
 
     void Reiniciar()
     {
+        if (Vidas.instancia != null && Vidas.instancia.PerderVida())
+            return; // se acabaron las vidas, la escena se reinicia
+
         transform.position = puntoInicio.position;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.linearVelocity = Vector2.zero;
